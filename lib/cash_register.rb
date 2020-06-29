@@ -30,11 +30,12 @@ end
 
 def void_last_transaction
   quantity = self.transaction[2]
+  price = self.transaction[1]
   quantity.times do
     self.items.pop
     
   end
-  self.total -= transaction[1] * transaction[2]
+  self.total -= price * quantity
 end
 
 end

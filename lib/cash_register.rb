@@ -34,7 +34,7 @@ def void_last_transaction
     self.items.pop
     
   end
-  self.total -= transation[1] * transaction[2]
+  self.total -= transaction[1] * transaction[2]
 end
 
 end
